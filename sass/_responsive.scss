@@ -147,7 +147,6 @@
             & .slide {
                 flex-direction: column;
                 padding: 1rem;
-                // text-align: center;
                 
                 & .slide-text {
                     align-items: flex-start;
@@ -179,6 +178,16 @@
 }
 
 @include media-xs {
+    header {
+        & .search-bar {
+            .search-div {
+                input {
+                   width: 75%;  
+                }
+            }
+        }
+    }
+
     nav {
         .row {
             .logo-container {

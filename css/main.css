@@ -870,6 +870,9 @@ footer .row:nth-child(2) a#copyright {
 }
 
 @media screen and (max-width: 425px) {
+  header .search-bar .search-div input {
+    width: 75%;
+  }
   nav .row .logo-container a {
     font-size: 1rem;
   }
