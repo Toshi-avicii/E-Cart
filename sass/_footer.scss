@@ -1,0 +1,142 @@
+footer {
+    margin-top: $section-space;
+    background: $heading-color;
+    padding: 5rem 0 1rem 0;
+
+    & .row:nth-child(1) {
+        margin-bottom: 2rem;
+        & .col-xs-12:nth-child(1) {
+            .brand-info {
+                a {
+                    display: inline-block;
+                    color: $text-color;
+                    font-family: $primary-font;
+                    font-weight: 700;
+                    font-size: 2rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .brand-address {
+                    @include flexStart;
+                    margin-bottom: 0.3rem;
+
+                    span {
+                        color: $text-color;
+                        font-size: 1.2rem;
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                        margin-left: 10px;
+                        font-family: $primary-font;
+                        color: $text-color;
+                    }
+                }
+
+                .brand-phone {
+                    @extend .brand-address;
+                }
+
+                .brand-email {
+                    @extend .brand-address;
+                }
+            }
+        }
+
+        .brand-text {
+            color: $text-color;
+            font-family: $primary-font;
+
+            h4 {
+                font-size: 1.75rem;
+                font-weight: normal;
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        .footer-menu {
+            font-family: $primary-font;
+            color: $text-color;
+            h4 {
+                font-weight: normal;
+                font-size: 1.75rem;
+                margin-bottom: 1.2rem;
+            }
+
+            ul {
+                li {
+                    margin: 0.4rem 0;
+                    a {
+                        color: $text-color;
+                    } 
+                }
+            }
+        }
+
+        .newsletter {
+            color: $text-color;
+            font-family: $primary-font;
+
+            h4 {
+                font-size: 1.75rem;
+                font-weight: normal;
+                margin-bottom: 1.2rem;
+            }
+
+            form {
+                margin-bottom: 1rem;
+                input {
+                    padding: 0.35rem 1rem;
+                    margin-bottom: 0.75rem;
+
+                    &[type=email] {
+                        width: 100%;
+                    }
+
+                    &[type=submit] {
+                        background-color: $secondary-color;
+                        border: none;
+                        color: $text-color;
+                        padding: 0.5rem 2.5rem;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            background-color: $text-color;
+                            color: $primary-color;
+                            @include transition-md;
+                        }
+                    }
+                }
+            }
+
+            .social-links {
+                a {
+                    color: $text-color;
+
+                    span {
+                        font-size: 1.5rem;
+                        display: inline-block;
+                        margin-right: 0.75rem;
+                    }
+
+                    &:hover {
+                        color: $secondary-color;
+                        @include transition-sm;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .row:nth-child(2) {
+        a#copyright {
+            color: $text-color;
+            text-align: center;
+            font-family: $primary-font;
+            padding-top: 1rem;
+            border-top: 1px solid $text-color;
+            margin-bottom: 0;
+        }
+    }
+}

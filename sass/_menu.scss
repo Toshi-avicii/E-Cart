@@ -1,0 +1,48 @@
+nav {
+    background-color: $heading-color;
+   
+    & .row {
+        padding: 0.75rem 0;
+
+        & .logo-container {
+            @include flexStart;
+    
+            a {
+                color: $text-color;
+                font-size: 2rem;
+                font-family: $primary-font;
+                font-weight: bold;
+            }
+        }
+
+        & .lg-menu {
+
+            & ul {
+                @include flexEven;
+                height: 100%;
+    
+                & li a {
+                    color: $text-color;
+                    font-family: $primary-font;
+    
+                    &:hover {
+                        @include transition-sm;
+                        color: $secondary-color;
+                    }
+                }
+    
+                & li a.active {
+                    color: $secondary-color;
+                }
+            }
+        }
+
+        & .menu-btn-container {
+            display: none;
+        }
+    }
+    
+    & .mob-menu-container {
+        display: none;
+    }
+}

@@ -1,0 +1,50 @@
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul, ol {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+@mixin media-xs {
+    @media screen and (max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (max-width: 1440px) {
+        @content;
+    }
+}

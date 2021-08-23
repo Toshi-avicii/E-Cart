@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Helvetica-bold';
+    src: url(../fonts/Helvetica/Helvetica-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url(../fonts/Helvetica/Helvetica.ttf);
+}
+
+
+@font-face {
+    font-family: 'Helvetica-2';
+    src: url(../fonts/Helvetica/HelveticaLt.ttf);
+}
+
+@import 'config'; // always load _config.scss first
+@import 'variables';
+@import 'header';
+@import 'menu';
+@import 'home';
+@import 'footer';
+@import 'responsive'; // always load _responsive.scss at last
